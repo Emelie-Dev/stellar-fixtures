@@ -1,0 +1,33 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://horizon-testnet.stellar.org/"
+    },
+    "account": {
+      "href": "https://horizon-testnet.stellar.org/accounts/{account_id}",
+      "templated": true
+    },
+    "accounts": {
+      "href": "https://horizon-testnet.stellar.org/accounts{?signer,sdp,asset,cursor,limit,order}",
+      "templated": true
+    },
+    "transaction": {
+      "href": "https://horizon-testnet.stellar.org/transactions/{hash}",
+      "templated": true
+    },
+    "transactions": {
+      "href": "https://horizon-testnet.stellar.org/transactions{?cursor,limit,order}",
+      "templated": true
+    }
+  },
+  "horizon_version": "2.30.0",
+  "core_version": "stellar-core 20.0.0",
+  "ingest_latest_ledger": 500001,
+  "history_latest_ledger": 500001,
+  "history_latest_ledger_closed_at": "2024-01-02T03:04:05Z",
+  "history_elder_ledger": 1,
+  "core_latest_ledger": 500001,
+  "network_passphrase": "Test SDF Network ; September 2015",
+  "current_protocol_version": 21,
+  "supported_protocol_version": 21
+}

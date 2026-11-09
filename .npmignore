@@ -1,0 +1,14 @@
+src/
+scripts/
+tests/
+docs/
+.github/
+.* 
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+eslint.config.js
+.prettierrc
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+SECURITY.md

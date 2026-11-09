@@ -1,0 +1,30 @@
+{
+  "bids": [
+    {
+      "price_r": {
+        "n": 2,
+        "d": 1
+      },
+      "price": "2.0000000",
+      "amount": "25.0000000"
+    }
+  ],
+  "asks": [
+    {
+      "price_r": {
+        "n": 3,
+        "d": 1
+      },
+      "price": "3.0000000",
+      "amount": "15.0000000"
+    }
+  ],
+  "base": {
+    "asset_type": "native"
+  },
+  "counter": {
+    "asset_type": "credit_alphanum4",
+    "asset_code": "USD",
+    "asset_issuer": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z"
+  }
+}

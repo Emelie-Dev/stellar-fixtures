@@ -1,0 +1,46 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://horizon-testnet.stellar.org/accounts/GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z/offers"
+    },
+    "next": {
+      "href": "https://horizon-testnet.stellar.org/accounts/GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z/offers?cursor=1"
+    },
+    "prev": {
+      "href": "https://horizon-testnet.stellar.org/accounts/GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z/offers?cursor=1&order=desc"
+    }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "_links": {
+          "self": {
+            "href": "https://horizon-testnet.stellar.org/offers/1"
+          },
+          "offer_maker": {
+            "href": "https://horizon-testnet.stellar.org/accounts/GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z"
+          }
+        },
+        "id": "1",
+        "paging_token": "1",
+        "seller": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z",
+        "selling": {
+          "asset_type": "native"
+        },
+        "buying": {
+          "asset_type": "credit_alphanum4",
+          "asset_code": "USD",
+          "asset_issuer": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z"
+        },
+        "amount": "25.0000000",
+        "price_r": {
+          "n": 2,
+          "d": 1
+        },
+        "price": "2.0000000",
+        "last_modified_ledger": 500001,
+        "last_modified_time": "2024-01-02T03:04:05Z"
+      }
+    ]
+  }
+}

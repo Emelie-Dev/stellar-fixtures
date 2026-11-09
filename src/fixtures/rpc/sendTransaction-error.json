@@ -1,0 +1,9 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "status": "ERROR",
+    "hash": "7d865ce4045afbd76af8d0e24ea67308431729ca6fc9c7a28466475409668d6e",
+    "errorResultXdr": "AAAAAAAAAGT/////AAAAAAAAAAA="
+  }
+}

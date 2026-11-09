@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "events": [
+      {
+        "type": "contract",
+        "ledger": 500001,
+        "ledgerClosedAt": "2024-01-02T03:04:05Z",
+        "contractId": "CCETXW3ZRHJCTTYZYP4GH6RYNBIMOQLP7ZYP35C3Q3OY6LLEDETKJRUB",
+        "id": "000000500001-0000000001",
+        "pagingToken": "500001-1",
+        "topic": ["AAAADgAAAAh0cmFuc2Zlcg=="],
+        "value": "AAAADgAAABBzdGVsbGFyLWZpeHR1cmVz",
+        "inSuccessfulContractCall": true,
+        "txHash": "7d865ce4045afbd76af8d0e24ea67308431729ca6fc9c7a28466475409668d6e"
+      }
+    ],
+    "latestLedger": 500001
+  }
+}

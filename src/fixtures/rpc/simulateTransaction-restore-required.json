@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "latestLedger": 500001,
+    "minResourceFee": "100",
+    "results": [],
+    "restorePreamble": {
+      "minResourceFee": "100",
+      "transactionData": "AAAAAAAAAAAAAAAAAAAD6AAAAQAAAAAAAAAAAAAAAGQ="
+    }
+  }
+}

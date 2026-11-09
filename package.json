@@ -1,0 +1,70 @@
+{
+  "name": "stellar-fixtures",
+  "version": "0.1.0",
+  "description": "Typed, deterministic fixtures for Stellar Horizon and Soroban RPC responses",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./horizon": {
+      "types": "./dist/horizon/index.d.ts",
+      "import": "./dist/horizon/index.js",
+      "require": "./dist/horizon/index.cjs"
+    },
+    "./rpc": {
+      "types": "./dist/rpc/index.d.ts",
+      "import": "./dist/rpc/index.js",
+      "require": "./dist/rpc/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "stellar",
+    "soroban",
+    "horizon",
+    "rpc",
+    "fixtures",
+    "mock",
+    "testing"
+  ],
+  "scripts": {
+    "build": "tsup && node scripts/smoke-exports.mjs",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "validate": "tsx scripts/validate-fixtures.ts",
+    "generate": "tsx scripts/generate-keys.ts && tsx scripts/generate-xdr.ts",
+    "prepublishOnly": "npm run validate && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@stellar/stellar-base": "^13.1.0",
+    "typescript-eslint": "8.1.0",
+    "@types/node": "^20.14.10",
+    "@vitest/coverage-v8": "^2.0.5",
+    "eslint": "9.8.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}

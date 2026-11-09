@@ -1,0 +1,22 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "latestLedger": 500001,
+    "minResourceFee": "100",
+    "transactionData": "AAAAAAAAAAAAAAAAAAAD6AAAAQAAAAAAAAAAAAAAAGQ=",
+    "cost": {
+      "cpuInsns": "1000",
+      "memBytes": "256"
+    },
+    "results": [
+      {
+        "auth": [],
+        "xdr": "AAAADgAAABBzdGVsbGFyLWZpeHR1cmVz",
+        "returnValue": "AAAADgAAABBzdGVsbGFyLWZpeHR1cmVz"
+      }
+    ],
+    "events": [],
+    "restorePreamble": null
+  }
+}

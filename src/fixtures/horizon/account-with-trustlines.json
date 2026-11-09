@@ -1,0 +1,63 @@
+{
+  "id": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z",
+  "account_id": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z",
+  "sequence": "1000000000000001",
+  "subentry_count": 2,
+  "last_modified_ledger": 500001,
+  "last_modified_time": "2024-01-02T03:04:05Z",
+  "thresholds": {
+    "low": "1",
+    "med": "1",
+    "high": "1"
+  },
+  "flags": {
+    "auth_required": false,
+    "auth_revocable": true,
+    "auth_immutable": false,
+    "auth_clawback_enabled": false
+  },
+  "balances": [
+    {
+      "balance": "1000.0000000",
+      "buying_liabilities": "0.0000000",
+      "selling_liabilities": "0.0000000",
+      "asset_type": "native",
+      "is_authorized": true,
+      "is_authorized_to_maintain_liabilities": true,
+      "is_clawback_enabled": false
+    },
+    {
+      "balance": "50.0000000",
+      "buying_liabilities": "1.0000000",
+      "selling_liabilities": "0.0000000",
+      "limit": "1000.0000000",
+      "asset_type": "credit_alphanum4",
+      "asset_code": "USD",
+      "asset_issuer": "GANUS5NQV56OD4QGGZ5ZP7RUFZKBVBJICUKA3VP4RBI7AIUCY3GELOF6",
+      "is_authorized": true,
+      "is_authorized_to_maintain_liabilities": true,
+      "is_clawback_enabled": false
+    },
+    {
+      "balance": "25.0000000",
+      "buying_liabilities": "0.0000000",
+      "selling_liabilities": "0.0000000",
+      "limit": "500.0000000",
+      "asset_type": "credit_alphanum4",
+      "asset_code": "EUR",
+      "asset_issuer": "GDV34PXSEGBC5N3JMY6QKWZJA6OED7NP7BAWTG6BWMLR2YQOP2U4K6QP",
+      "is_authorized": false,
+      "is_authorized_to_maintain_liabilities": true,
+      "is_clawback_enabled": false
+    }
+  ],
+  "signers": [
+    {
+      "weight": 1,
+      "key": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z",
+      "type": "ed25519_public_key"
+    }
+  ],
+  "data": {},
+  "paging_token": "500001"
+}

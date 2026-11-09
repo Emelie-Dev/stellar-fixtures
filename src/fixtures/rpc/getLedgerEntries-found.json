@@ -1,0 +1,15 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "entries": [
+      {
+        "key": "AAAACZIdvugaQ7xdWWLPWGWsQU0SRTvLl3Jg112whIwtWU6B",
+        "xdr": "AAehIQAAAAmSHb7oGkO8XVliz1hlrEFNEkU7y5dyYNddsISMLVlOgQAHoYQAAAAA",
+        "lastModifiedLedgerSeq": 500001,
+        "liveUntilLedgerSeq": 500100
+      }
+    ],
+    "latestLedger": 500001
+  }
+}

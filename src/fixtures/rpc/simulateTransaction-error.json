@@ -1,0 +1,10 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "error": "HostError: Error(Storage, MissingValue)",
+    "latestLedger": 500001,
+    "events": [],
+    "results": []
+  }
+}

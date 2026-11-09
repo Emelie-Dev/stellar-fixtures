@@ -1,0 +1,27 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://horizon-testnet.stellar.org/payments/path-payment"
+    },
+    "transaction": {
+      "href": "https://horizon-testnet.stellar.org/transactions/7d865ce4045afbd76af8d0e24ea67308431729ca6fc9c7a28466475409668d6e"
+    }
+  },
+  "id": "path-payment",
+  "paging_token": "500001-1",
+  "transaction_hash": "7d865ce4045afbd76af8d0e24ea67308431729ca6fc9c7a28466475409668d6e",
+  "created_at": "2024-01-02T03:04:05Z",
+  "source_account": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z",
+  "type": "path_payment_strict_receive",
+  "type_i": 2,
+  "asset_type": "credit_alphanum4",
+  "asset_code": "USD",
+  "asset_issuer": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z",
+  "from": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z",
+  "to": "GDRZDXPE3FRDTMKOZKIGDT4EPABCKUSVG57F2FQOKAU3VETZSHC7NWY7",
+  "amount": "10.0000000",
+  "source_asset_type": "native",
+  "source_amount": "12.0000000",
+  "source_max": "15.0000000",
+  "path": []
+}

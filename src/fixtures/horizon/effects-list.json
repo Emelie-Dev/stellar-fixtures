@@ -1,0 +1,33 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://horizon-testnet.stellar.org/accounts/GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z/effects"
+    },
+    "next": {
+      "href": "https://horizon-testnet.stellar.org/accounts/GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z/effects?cursor=500001-1"
+    },
+    "prev": {
+      "href": "https://horizon-testnet.stellar.org/accounts/GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z/effects?cursor=500001-1&order=desc"
+    }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "_links": {
+          "operation": {
+            "href": "https://horizon-testnet.stellar.org/operations/operation-record"
+          }
+        },
+        "id": "500001-1",
+        "paging_token": "500001-1",
+        "account": "GDRZDXPE3FRDTMKOZKIGDT4EPABCKUSVG57F2FQOKAU3VETZSHC7NWY7",
+        "type": "account_credited",
+        "type_i": 2,
+        "created_at": "2024-01-02T03:04:05Z",
+        "asset_type": "native",
+        "amount": "10.0000000",
+        "starting_balance": "20.0000000"
+      }
+    ]
+  }
+}

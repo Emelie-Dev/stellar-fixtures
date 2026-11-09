@@ -1,0 +1,32 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://horizon-testnet.stellar.org/transactions/7d865ce4045afbd76af8d0e24ea67308431729ca6fc9c7a28466475409668d6e"
+    }
+  },
+  "id": "7d865ce4045afbd76af8d0e24ea67308431729ca6fc9c7a28466475409668d6e",
+  "paging_token": "500001",
+  "successful": false,
+  "hash": "7d865ce4045afbd76af8d0e24ea67308431729ca6fc9c7a28466475409668d6e",
+  "ledger": 500001,
+  "created_at": "2024-01-02T03:04:05Z",
+  "source_account": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z",
+  "source_account_sequence": "1000000000000001",
+  "fee_account": "GCWVHECH75LYBE2AH2USUP4IQFUSEHOCKZGD5HHA66THD7USKXUPT23Z",
+  "fee_charged": "100",
+  "max_fee": "100",
+  "operation_count": 1,
+  "envelope_xdr": "AAAAAgAAAACtU5BH/1eAk0A+qSo/iIFpIh3CVkw+nOD3pnH+klXo+QAAAGQAA41+pMaAAgAAAAEAAAAAAAAAAAAAAABq8jfqAAAAAAAAAAEAAAAAAAAAAQAAAADjkd3k2WI5sU7KkGHPhHgCJVJVN35dFg5QKbqSeZHF9gAAAAAAAAAAAL68IAAAAAAAAAABklXo+QAAAECC48YGWd417heTtF/PgIlmifyp/sQ4INEMV+eqiIqQBHEEkdpUZ/eHTYBh8IASJm3ZQuZn++WytX47Yz+RAE4M",
+  "result_xdr": "AAAAAAAAAGT/////AAAAAAAAAAA=",
+  "result_meta_xdr": "AAAAAAAAAAA=",
+  "fee_meta_xdr": "AAAAAAAAAAA=",
+  "memo_type": "none",
+  "signatures": [],
+  "extras": {
+    "result_codes": {
+      "transaction": "tx_failed",
+      "operations": ["op_underfunded"]
+    },
+    "result_xdr": "AAAAAAAAAGT/////AAAAAAAAAAA="
+  }
+}

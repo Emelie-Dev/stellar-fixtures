@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "status": "FAILED",
+    "latestLedger": 500001,
+    "latestLedgerCloseTime": "1704164645",
+    "oldestLedger": 400000,
+    "oldestLedgerCloseTime": "1703164645",
+    "applicationOrder": 0,
+    "feeBump": false,
+    "envelopeXdr": "AAAAAgAAAACtU5BH/1eAk0A+qSo/iIFpIh3CVkw+nOD3pnH+klXo+QAAAGQAA41+pMaAAgAAAAEAAAAAAAAAAAAAAABq8jfqAAAAAAAAAAEAAAAAAAAAAQAAAADjkd3k2WI5sU7KkGHPhHgCJVJVN35dFg5QKbqSeZHF9gAAAAAAAAAAAL68IAAAAAAAAAABklXo+QAAAECC48YGWd417heTtF/PgIlmifyp/sQ4INEMV+eqiIqQBHEEkdpUZ/eHTYBh8IASJm3ZQuZn++WytX47Yz+RAE4M",
+    "resultXdr": "AAAAAAAAAGT/////AAAAAAAAAAA=",
+    "resultMetaXdr": "AAAAAAAAAAA=",
+    "ledger": 500001
+  }
+}
