@@ -214,3 +214,29 @@ export const registry: { meta: FixtureMeta; data: unknown }[] = [
     data: fixture18,
   },
 ];
+
+type RpcFixture<T> = {
+  [K in keyof T]: K extends "jsonrpc" ? "2.0" : T[K];
+};
+
+export interface RpcFixtureDataMap {
+  "rpc.getHealth.healthy": RpcFixture<typeof fixture0>;
+  "rpc.getLatestLedger.basic": RpcFixture<typeof fixture1>;
+  "rpc.getNetwork.testnet": RpcFixture<typeof fixture2>;
+  "rpc.getTransaction.success": RpcFixture<typeof fixture3>;
+  "rpc.getTransaction.failed": RpcFixture<typeof fixture4>;
+  "rpc.getTransaction.not-found": RpcFixture<typeof fixture5>;
+  "rpc.sendTransaction.pending": RpcFixture<typeof fixture6>;
+  "rpc.sendTransaction.error": RpcFixture<typeof fixture7>;
+  "rpc.sendTransaction.duplicate": RpcFixture<typeof fixture8>;
+  "rpc.sendTransaction.try-again-later": RpcFixture<typeof fixture9>;
+  "rpc.simulateTransaction.success": RpcFixture<typeof fixture10>;
+  "rpc.simulateTransaction.error": RpcFixture<typeof fixture11>;
+  "rpc.simulateTransaction.restore-required": RpcFixture<typeof fixture12>;
+  "rpc.getEvents.contract-events": RpcFixture<typeof fixture13>;
+  "rpc.getEvents.empty": RpcFixture<typeof fixture14>;
+  "rpc.getLedgerEntries.found": RpcFixture<typeof fixture15>;
+  "rpc.getLedgerEntries.empty": RpcFixture<typeof fixture16>;
+  "rpc.error.invalid-request": RpcFixture<typeof fixture17>;
+  "rpc.error.method-not-found": RpcFixture<typeof fixture18>;
+}

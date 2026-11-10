@@ -1,5 +1,5 @@
 import { getFixtureFrom, listFixturesFrom, withOverridesFrom } from "./core.js";
-import { registry } from "./registry.js";
+import { registry, type FixtureDataMap } from "./registry.js";
 import { createResponse } from "./response.js";
 import type {
   DeepPartial,
@@ -8,6 +8,7 @@ import type {
   FixtureSource,
 } from "./types.js";
 
+export type { FixtureDataMap } from "./registry.js";
 export type {
   DeepPartial,
   FixtureId,
@@ -20,8 +21,15 @@ export type {
 } from "./types.js";
 export { ACCOUNTS, CONTRACTS, ISSUERS } from "./constants.js";
 
-export function getFixture<T = unknown>(id: FixtureId): T {
-  return getFixtureFrom<T>(registry, id);
+export function getFixture<
+  T = never,
+  K extends FixtureId = FixtureId,
+>(
+  id: [T] extends [never] ? K : FixtureId,
+): [T] extends [never] ? FixtureDataMap[K] : T {
+  return getFixtureFrom(registry, id) as [T] extends [never]
+    ? FixtureDataMap[K]
+    : T;
 }
 
 export function listFixtures(filter?: {
@@ -31,8 +39,18 @@ export function listFixtures(filter?: {
   return listFixturesFrom(registry, filter);
 }
 
-export function withOverrides<T>(id: FixtureId, overrides: DeepPartial<T>): T {
-  return withOverridesFrom(registry, id, overrides);
+export function withOverrides<
+  T = never,
+  K extends FixtureId = FixtureId,
+>(
+  id: K,
+  overrides: [T] extends [never]
+    ? NoInfer<DeepPartial<FixtureDataMap[K]>>
+    : NoInfer<DeepPartial<T>>,
+): [T] extends [never] ? FixtureDataMap[K] : T {
+  return withOverridesFrom(registry, id, overrides as DeepPartial<unknown>) as [T] extends [never]
+    ? FixtureDataMap[K]
+    : T;
 }
 
 export function fixtureResponse(

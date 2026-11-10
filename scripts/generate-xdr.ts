@@ -986,7 +986,13 @@ const entries = definitions
     return `  { meta: ${JSON.stringify(meta)}, data: ${variable} },`;
   })
   .join("\n");
-const registry = `${imports}\nimport type { FixtureMeta } from "./types.js";\n\nexport const registry: { meta: FixtureMeta; data: unknown }[] = [\n${entries}\n];\n`;
+const mapEntries = definitions
+  .map(
+    (fixture, index) =>
+      `  ${JSON.stringify(fixture.id)}: typeof fixture${index};`,
+  )
+  .join("\n");
+const registry = `${imports}\nimport type { FixtureMeta } from "./types.js";\n\nexport interface FixtureDataMap {\n${mapEntries}\n}\n\nexport const registry: { meta: FixtureMeta; data: unknown }[] = [\n${entries}\n];\n`;
 await writeFormatted(
   new URL("../src/registry.ts", import.meta.url),
   registry,
@@ -1014,7 +1020,15 @@ for (const source of ["horizon", "rpc"] as const) {
       return `  { meta: ${JSON.stringify(meta)}, data: fixture${index} },`;
     })
     .join("\n");
-  const sourceRegistry = `${sourceImports}\nimport type { FixtureMeta } from "../types.js";\n\nexport const registry: { meta: FixtureMeta; data: unknown }[] = [\n${sourceEntries}\n];\n`;
+  const sourceMapEntries = sourceDefinitions
+    .map(
+      (fixture, index) =>
+        `  ${JSON.stringify(fixture.id)}: typeof fixture${index};`,
+    )
+    .join("\n");
+  const interfaceName =
+    source === "horizon" ? "HorizonFixtureDataMap" : "RpcFixtureDataMap";
+  const sourceRegistry = `${sourceImports}\nimport type { FixtureMeta } from "../types.js";\n\nexport interface ${interfaceName} {\n${sourceMapEntries}\n}\n\nexport const registry: { meta: FixtureMeta; data: unknown }[] = [\n${sourceEntries}\n];\n`;
   await writeFormatted(
     new URL(`../src/${source}/registry.ts`, import.meta.url),
     sourceRegistry,
