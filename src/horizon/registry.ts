@@ -22,6 +22,31 @@ import fixture20 from "../fixtures/horizon/paging-next-page.json";
 import fixture21 from "../fixtures/horizon/root-info.json";
 import type { FixtureMeta } from "../types.js";
 
+export interface HorizonFixtureDataMap {
+  "horizon.account.basic": typeof fixture0;
+  "horizon.account.with-trustlines": typeof fixture1;
+  "horizon.account.low-balance": typeof fixture2;
+  "horizon.account.not-found": typeof fixture3;
+  "horizon.transaction.payment.success": typeof fixture4;
+  "horizon.transaction.multi-op.success": typeof fixture5;
+  "horizon.transaction.failed.bad-seq": typeof fixture6;
+  "horizon.transaction.failed.op-underfunded": typeof fixture7;
+  "horizon.transaction.failed.op-no-trust": typeof fixture8;
+  "horizon.transaction.failed.insufficient-fee": typeof fixture9;
+  "horizon.payment.native": typeof fixture10;
+  "horizon.payment.credit-asset": typeof fixture11;
+  "horizon.path-payment.strict-receive": typeof fixture12;
+  "horizon.operations.list": typeof fixture13;
+  "horizon.effects.list": typeof fixture14;
+  "horizon.offers.list": typeof fixture15;
+  "horizon.orderbook.basic": typeof fixture16;
+  "horizon.ledger.latest": typeof fixture17;
+  "horizon.fee-stats.basic": typeof fixture18;
+  "horizon.paging.empty-page": typeof fixture19;
+  "horizon.paging.next-page": typeof fixture20;
+  "horizon.root.info": typeof fixture21;
+}
+
 export const registry: { meta: FixtureMeta; data: unknown }[] = [
   {
     meta: {
@@ -247,3 +272,28 @@ export const registry: { meta: FixtureMeta; data: unknown }[] = [
     data: fixture21,
   },
 ];
+
+export interface HorizonFixtureDataMap {
+  "horizon.account.basic": typeof fixture0;
+  "horizon.account.with-trustlines": typeof fixture1;
+  "horizon.account.low-balance": typeof fixture2;
+  "horizon.account.not-found": typeof fixture3;
+  "horizon.transaction.payment.success": typeof fixture4;
+  "horizon.transaction.multi-op.success": typeof fixture5;
+  "horizon.transaction.failed.bad-seq": typeof fixture6;
+  "horizon.transaction.failed.op-underfunded": typeof fixture7;
+  "horizon.transaction.failed.op-no-trust": typeof fixture8;
+  "horizon.transaction.failed.insufficient-fee": typeof fixture9;
+  "horizon.payment.native": typeof fixture10;
+  "horizon.payment.credit-asset": typeof fixture11;
+  "horizon.path-payment.strict-receive": typeof fixture12;
+  "horizon.operations.list": typeof fixture13;
+  "horizon.effects.list": typeof fixture14;
+  "horizon.offers.list": typeof fixture15;
+  "horizon.orderbook.basic": typeof fixture16;
+  "horizon.ledger.latest": typeof fixture17;
+  "horizon.fee-stats.basic": typeof fixture18;
+  "horizon.paging.empty-page": typeof fixture19;
+  "horizon.paging.next-page": typeof fixture20;
+  "horizon.root.info": typeof fixture21;
+}

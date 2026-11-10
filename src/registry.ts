@@ -459,3 +459,51 @@ export const registry: { meta: FixtureMeta; data: unknown }[] = [
     data: fixture40,
   },
 ];
+
+type RpcFixture<T> = {
+  [K in keyof T]: K extends "jsonrpc" ? "2.0" : T[K];
+};
+
+export interface FixtureDataMap {
+  "horizon.account.basic": typeof fixture0;
+  "horizon.account.with-trustlines": typeof fixture1;
+  "horizon.account.low-balance": typeof fixture2;
+  "horizon.account.not-found": typeof fixture3;
+  "horizon.transaction.payment.success": typeof fixture4;
+  "horizon.transaction.multi-op.success": typeof fixture5;
+  "horizon.transaction.failed.bad-seq": typeof fixture6;
+  "horizon.transaction.failed.op-underfunded": typeof fixture7;
+  "horizon.transaction.failed.op-no-trust": typeof fixture8;
+  "horizon.transaction.failed.insufficient-fee": typeof fixture9;
+  "horizon.payment.native": typeof fixture10;
+  "horizon.payment.credit-asset": typeof fixture11;
+  "horizon.path-payment.strict-receive": typeof fixture12;
+  "horizon.operations.list": typeof fixture13;
+  "horizon.effects.list": typeof fixture14;
+  "horizon.offers.list": typeof fixture15;
+  "horizon.orderbook.basic": typeof fixture16;
+  "horizon.ledger.latest": typeof fixture17;
+  "horizon.fee-stats.basic": typeof fixture18;
+  "horizon.paging.empty-page": typeof fixture19;
+  "horizon.paging.next-page": typeof fixture20;
+  "horizon.root.info": typeof fixture21;
+  "rpc.getHealth.healthy": RpcFixture<typeof fixture22>;
+  "rpc.getLatestLedger.basic": RpcFixture<typeof fixture23>;
+  "rpc.getNetwork.testnet": RpcFixture<typeof fixture24>;
+  "rpc.getTransaction.success": RpcFixture<typeof fixture25>;
+  "rpc.getTransaction.failed": RpcFixture<typeof fixture26>;
+  "rpc.getTransaction.not-found": RpcFixture<typeof fixture27>;
+  "rpc.sendTransaction.pending": RpcFixture<typeof fixture28>;
+  "rpc.sendTransaction.error": RpcFixture<typeof fixture29>;
+  "rpc.sendTransaction.duplicate": RpcFixture<typeof fixture30>;
+  "rpc.sendTransaction.try-again-later": RpcFixture<typeof fixture31>;
+  "rpc.simulateTransaction.success": RpcFixture<typeof fixture32>;
+  "rpc.simulateTransaction.error": RpcFixture<typeof fixture33>;
+  "rpc.simulateTransaction.restore-required": RpcFixture<typeof fixture34>;
+  "rpc.getEvents.contract-events": RpcFixture<typeof fixture35>;
+  "rpc.getEvents.empty": RpcFixture<typeof fixture36>;
+  "rpc.getLedgerEntries.found": RpcFixture<typeof fixture37>;
+  "rpc.getLedgerEntries.empty": RpcFixture<typeof fixture38>;
+  "rpc.error.invalid-request": RpcFixture<typeof fixture39>;
+  "rpc.error.method-not-found": RpcFixture<typeof fixture40>;
+}
