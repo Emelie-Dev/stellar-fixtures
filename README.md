@@ -68,7 +68,7 @@ console.log(health.result.status);
 
 Subpaths `stellar-fixtures/horizon` and `stellar-fixtures/rpc` expose source-specific `getFixture`, `listFixtures`, and `withOverrides` functions and associated types.
 
-See the complete [fixture catalog](./docs/FIXTURES.md).
+See the complete [fixture catalog](./docs/FIXTURES.md) and the [consumer cookbook](./docs/COOKBOOK.md) for recipes covering isolated clones, nested withOverrides, array replacement, metadata filtering, and custom-status ixtureResponse mocks.
 
 ## Generation and validation
 
